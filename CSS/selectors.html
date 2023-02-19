@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+    <title>Selectors</title>
+    <style>
+
+        /*
+        *{
+            color: red;
+        }
+        */
+
+        /*
+        p, a{
+            color: red;
+        }
+        */
+        
+        /*
+        p, h3{
+            color: red;  
+        }
+        */
+
+        /*
+        a, h3{
+            color: red;
+        }
+        */
+
+        /*
+        div p{
+            color: red;
+        }
+        */
+
+        /*
+        div > p{
+            color: red;
+        }
+        */
+
+        /*
+        div + p{
+            color: red;
+        }
+        */
+
+        /*
+        div ~ p{
+            color: red;
+        } 
+        */
+
+        /*
+        div>p:first-child{
+            color: red;
+        }
+        */
+
+        /*
+        div>p:last-child{
+            color:red;
+        }
+        */
+
+        /*
+        div > p:nth-child(3){
+            color:red;
+        }
+        */
+
+        /*
+        div > nav > p:nth-child(2){
+            color:red;
+        }
+        */
+
+        .div2>ol>li :last-child{
+            color: red;
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <!--
+        1- * -> selects all elements
+        2- p -> selects all <p> elements
+        3- h3 -> selects all <h3> elements
+        4- a -> selects all <a> elements
+        5- p, a -> selects all <p> and <a> elements
+        6- div p -> selects all <p> elements inside <div> elements
+        7- div > p ->selects all <p> elements where the parent is a <div> element
+        8- div + p -> selects the first <p> element that is placed immediately after <div> elements.
+        9- div ~ p -> selects every <p> that is preceeded by a <p> element
+        10- :first-child -> p:first-child ->select every <p> element that is the first child of its parent
+        11- div>p:first-child -> 
+    -->
+
+    <div style="margin-bottom: 100px; background-color:beige">
+        <h2 style="text-align: center;">Div1</h2>
+
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+        <p>paragraph3</p>
+        <p>paragraph4</p>
+        <p>paragraph5</p><br>
+
+        <a href="">link1</a><br>
+        <a href="">link2</a><br>
+        <a href="">link3</a><br>
+        <a href="">link4</a><br>
+        <a href="">link5</a><br><br>
+
+        <!--The parent is nav-->
+        <nav>
+            <p>paragraphs whose parent is "nav", NOT div!</p>
+            <p>paragraphs whose parent is "nav", NOT div!</p>
+            <p>paragraphs whose parent is "nav", NOT div!</p>
+        </nav>
+
+
+        <h3>h3 tag</h3>
+        <h3>h3 tag</h3>
+        <h3>h3 tag</h3>
+        <h3>h3 tag</h3>
+        <h3>h3 tag</h3>
+        <h3>h3 tag</h3>
+    </div>
+
+    <p>paragraph outside div(the first p element after a "div" eleemnt)</p>
+    <p>paragraph outside div</p>
+    <p>paragraph outside div</p><br>
+
+   
+    <div class="div2" style="margin-bottom: 50px; background-color:burlywood">
+        <h2 style="text-align: center;">Div2</h2>
+        <h3>h3 tag</h3>
+        <h3>h3 tag</h3>
+
+        <p>paragraph6</p>
+        <p>paragraph7</p>  
+
+        <ol>
+            <li>li-1</li>
+            <li>li-2</li>
+            <li>li-3</li>
+        </ol>
+    </div>
+
+    <div style="background-color: coral;">
+        <h2 style="text-align: center;">Div3</h2>
+        <a href="">Linkkkk</a><br> 
+        <a href="">Linkkkk</a><br> 
+        <a href="">Linkkkk</a><br> 
+    </div>
+
+    <div>
+        <p style="background-color:pink">paragraph8</p>
+    </div>
+
+    <br><br>
+    <a href="https://www.w3schools.com/css/css_selectors.asp" style="color:chartreuse">for further information go web3schools</a>
+    
+
+    
+
+  </body>
+</html>
