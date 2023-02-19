@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+    <title>Dsiplay: Inlıne-Block-Inline Block</title>
+
+    <style>
+        .block1{
+            width: 200px;
+            height: 250px;
+            background-color: rgb(181, 167, 236);
+        }
+        .block2{
+            width: 200px;
+            height: 250px;
+            background-color: rgb(186, 181, 181);
+        }
+        .block3{
+            width: 200px;
+            height: 250px;
+            background-color: rgb(181, 167, 236);
+            display: inline-block;
+        }
+        .block4{
+            width: 200px;
+            height: 250px;
+            background-color: rgb(186, 181, 181);
+            display: inline-block;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <!--
+        In order to see the difference between inline, Block and block inline,
+        in the live Server page click right and hit the last option (incele).
+        You will see a console-like area. Hit the first icon to take a tour on
+        the page.
+    -->
+    
+
+    <p>This is an block element</p>
+    <a href="">This is an inline element</a>
+    <br><br><br><br><br>
+
+
+    <!--Converting an inline element to a block element-->
+    <a href="" style="display: block;">Inlıne -> Block</a>
+    <a href="">Lorem, ipsum.</a><br><br><br>
+
+
+    <!--Converting a block element to an inline element-->
+    <p style="display:inline">Block -> Inline</p>
+    <a href="">Lorem, ipsum.</a><br><br><br><hr>
+
+
+    
+    <!--You can NOT change/set the height and width for "inline" elements-->
+    <p style="display: inline;width:500px;height:500px;">
+        You can NOT change/set the height and width for "inline" elements
+    </p>
+
+    <!--You can change/set the height and width for "block" elements-->
+    <p style="width:500px;height:300px">You can change/set the height and width for "block" elements</p>
+    <br><br><br><hr>
+
+
+    <!--INLINE-BLOCK-->
+    <h3>Normally, divs are block elements</h3>
+    <div class="block1"></div>
+    <div class="block2"></div>
+    <br><br>
+
+    <h3>But you can define them as an inline-block</h3>
+    <div class="block3"></div>
+    <div class="block4"></div>
+
+  </body>
+</html>
+
+
+
+
+
