@@ -1,0 +1,8 @@
+/*
+    3-Harici bri css dosyası yardımıyla/creating an external css file:
+    This is method is more convenient fro big scale projects. Your code can be more readeble. It is recommended to use this 3rd method.
+    */
+h3{
+    color: white;
+    background-color: blue;
+}

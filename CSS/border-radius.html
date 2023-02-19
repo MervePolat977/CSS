@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+    <title>Border and Radius</title>
+    <style>
+        p{
+            text-align: center;
+            margin: 35%;
+
+        }
+        .boxSolid{
+            width: 200px;
+            height: 300px;
+            color: white;
+            background-color: rgb(183, 137, 226);
+            border: 5px solid rgb(82, 17, 193);
+            float: left;
+            margin-right: 5px;
+        }
+        .boxDotted{
+            width: 200px;
+            height: 300px;
+            color: white;
+            background-color: rgb(18, 192, 82);
+            border: 5px dotted rgb(82, 17, 193);  
+            float: left; 
+            margin-right: 5px;
+        }
+        .boxDashed{
+            width: 200px;
+            height: 300px;
+            color: white;
+            background-color: rgb(228, 121, 183);
+            border: 5px dashed rgb(82, 17, 193);  
+            float: left; 
+            margin-right: 5px;
+        }
+        .boxDouble{
+            width: 200px;
+            height: 300px;
+            color: white;
+            background-color: rgb(151, 161, 44);
+            border: 5px double rgb(82, 17, 193);  
+            float: left; 
+            margin-right: 5px;
+        }
+        .boxGroove{
+            width: 200px;
+            height: 300px;
+            color: white;
+            background-color: rgb(44, 122, 161);
+            border: 5px groove rgb(82, 17, 193);  
+            float: left; 
+            margin-right: 5px;
+        }
+        .boxRidge{
+            width: 200px;
+            height: 300px;
+            color: white;
+            background-color: rgb(241, 193, 238);
+            border: 5px ridge rgb(82, 17, 193);  
+            float: left; 
+            margin-right: 5px;
+        }
+        .boxInset{
+            width: 200px;
+            height: 300px;
+            color: white;
+            background-color: yellow;
+            border: 5px inset rgb(82, 17, 193);  
+            float: left; 
+            margin-right: 5px;
+        }
+        .container{
+            margin-left: 0px;
+        }
+
+        
+        /*Radius Border*/
+        .radiusBox{
+            width: 200px;
+            height: 300px;
+            color: white;
+            background-color: rgb(14, 64, 75);
+            border: 5px inset rgb(96, 193, 17);  
+           border-radius: 15px;
+        }
+        
+    </style>
+  </head>
+
+  <body>
+
+    <!--
+        BORDERS:
+        solid
+        dotted
+        dashed
+        double
+        groove
+        ridge
+        inset
+        outset
+    -->
+    <h1>Border</h1>
+    <div class="container">
+        <div class="boxSolid">
+            <p>Solid Border</p>
+        </div>
+        <div class="boxDotted">
+            <p>Dotted Border</p>
+        </div>
+        <div class="boxDashed">
+            <p>Dashed Border</p>
+        </div>
+        <div class="boxDouble">
+            <p>Double Border</p>
+        </div>
+        <div class="boxGroove">
+            <p>Groove Border</p>
+        </div>
+        <div class="boxRidge">
+            <p>Ridge Border</p>
+        </div>
+        <div class="boxInset">
+            <p>Inset Border</p>
+        </div>
+    </div>
+    <br><br><br><hr style="color:black">
+
+    <h1>Raidus</h1>
+    <div class="radiusBox">
+        <p>Raius Border</p>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
